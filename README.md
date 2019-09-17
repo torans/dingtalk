@@ -15,3 +15,5 @@
  ```angular2html
     php artisan vendor:publish --tag="Dingtalk"
 ```
+
+示例：
