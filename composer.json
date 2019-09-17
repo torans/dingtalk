@@ -28,7 +28,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "EasyDingTalk\\DingtalkServiceProvider"
+                "Totans\\dingtalk\\DingtalkServiceProvider"
             ]
         }
     },
