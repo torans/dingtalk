@@ -23,7 +23,6 @@ class Application extends Container
      * @var array
      */
     protected $providers = [
-        DingtalkServiceProvider::class,
         Auth\ServiceProvider::class,
         Chat\ServiceProvider::class,
         Role\ServiceProvider::class,
@@ -56,9 +55,10 @@ class Application extends Container
      * @param array $config
      * @param array $values
      */
-    public function __construct($config = [], array $values = [])
+    public function __construct(array $values = [])
     {
         parent::__construct($values);
+        $config = config('dingtalk');
 
         $this['config'] = function () use ($config) {
             return new Collection($config);
